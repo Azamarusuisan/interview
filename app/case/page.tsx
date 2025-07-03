@@ -54,6 +54,16 @@ export default function CasePage() {
     }
   }, [sessionStartTime])
 
+  useEffect(() => {
+    // クリーンアップ関数でメモリリークを防ぐ
+    return () => {
+      if (recognitionRef.current) {
+        recognitionRef.current.abort()
+        recognitionRef.current = null
+      }
+    }
+  }, [])
+
   const startCaseInterview = () => {
     const randomCase = defaultCases[Math.floor(Math.random() * defaultCases.length)]
     setCasePrompt(randomCase)
@@ -65,13 +75,16 @@ export default function CasePage() {
     setSessionStartTime(new Date())
     setIsStarted(true)
 
-    if (typeof window !== 'undefined' && 'webkitSpeechRecognition' in window) {
-      const recognition = new (window as any).webkitSpeechRecognition()
-      recognition.continuous = true
-      recognition.interimResults = true
-      recognition.lang = 'ja-JP'
-      recognitionRef.current = recognition
-    }
+    // 音声認識を遅延初期化
+    setTimeout(() => {
+      if (typeof window !== 'undefined' && 'webkitSpeechRecognition' in window) {
+        const recognition = new (window as any).webkitSpeechRecognition()
+        recognition.continuous = true
+        recognition.interimResults = true
+        recognition.lang = 'ja-JP'
+        recognitionRef.current = recognition
+      }
+    }, 100)
   }
 
   const startRecording = () => {

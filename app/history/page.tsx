@@ -40,7 +40,7 @@ export default function HistoryPage() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div>
       {/* ヘッダー */}
       <div className="bg-white dark:bg-gray-800 shadow-sm border-b dark:border-gray-700">
         <div className="px-6 py-4">

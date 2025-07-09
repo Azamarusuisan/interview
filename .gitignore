@@ -46,3 +46,4 @@ setup.sh
 start-*.sh
 requirements.md
 todo.md
+/app/generated/prisma

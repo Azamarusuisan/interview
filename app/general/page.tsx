@@ -322,7 +322,7 @@ export default function GeneralPage() {
 
   if (!isStarted) {
     return (
-      <div className="min-h-screen">
+      <div>
         <div className="bg-white border-b border-gray-200">
           <div className="px-6 py-4">
             <h1 className="text-2xl font-bold text-primary">人物面接練習</h1>
@@ -391,7 +391,7 @@ export default function GeneralPage() {
   }
 
   return (
-    <div className="min-h-screen">
+    <div>
       <div className="bg-white border-b border-gray-200">
         <div className="px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-primary">人物面接練習</h1>
@@ -415,9 +415,9 @@ export default function GeneralPage() {
           <p className="text-lg text-text">{currentQuestion}</p>
         </div>
         
-        <div className="bg-white rounded-lg shadow-lg" style={{ height: 'calc(100vh - 280px)' }}>
-          <div className="h-full flex flex-col">
-            <div className="flex-1 overflow-y-auto p-6 space-y-4">
+        <div className="bg-white rounded-lg shadow-lg">
+          <div className="flex flex-col">
+            <div className="p-6 space-y-4">
               {messages.map((msg, idx) => (
                 <div
                   key={idx}

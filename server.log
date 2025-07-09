@@ -1,0 +1,70 @@
+
+> case-sprint@0.1.0 dev
+> next dev
+
+   ▲ Next.js 14.0.4
+   - Local:        http://localhost:3000
+   - Environments: .env.local
+
+ ✓ Ready in 15s
+ ○ Compiling /middleware ...
+ ✓ Compiled /middleware in 1108ms (64 modules)
+ ○ Compiling /not-found ...
+ ✓ Compiled /not-found in 16.5s (449 modules)
+ ○ Compiling /_error ...
+ ✓ Compiled /_error in 8.9s (586 modules)
+ ⨯ Error: Cannot find module 'next/dist\client\components\static-generation-async-storage.external.js'
+Require stack:
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/require.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/load-components.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/build/utils.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/dev/hot-middleware.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/dev/hot-reloader-webpack.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/lib/router-server.js
+- /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/lib/start-server.js
+    at Module._resolveFilename (node:internal/modules/cjs/loader:1140:15)
+    at /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/require-hook.js:55:36
+    at Module._load (node:internal/modules/cjs/loader:981:27)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at ../../client/components/static-generation-async-storage.external (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js:88:18)
+    at __webpack_require__ (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/webpack-runtime.js:33:42)
+    at eval (webpack-internal:///(rsc)/./node_modules/next/dist/server/app-render/entry-base.js:78:47)
+    at (rsc)/./node_modules/next/dist/server/app-render/entry-base.js (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/vendor-chunks/next.js:2140:1)
+    at __webpack_require__ (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/webpack-runtime.js:33:42)
+    at eval (webpack-internal:///(rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fnot-found&page=%2Fnot-found&appPaths=&pagePath=private-next-app-dir%2Fnot-found.tsx&appDir=C%3A%5CUsers%5Cwaraj%5CDownloads%5Cai-interview-bot-cursor%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cwaraj%5CDownloads%5Cai-interview-bot-cursor&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D!:15:96)
+    at (rsc)/./node_modules/next/dist/build/webpack/loaders/next-app-loader.js?name=app%2Fnot-found&page=%2Fnot-found&appPaths=&pagePath=private-next-app-dir%2Fnot-found.tsx&appDir=C%3A%5CUsers%5Cwaraj%5CDownloads%5Cai-interview-bot-cursor%5Capp&pageExtensions=tsx&pageExtensions=ts&pageExtensions=jsx&pageExtensions=js&rootDir=C%3A%5CUsers%5Cwaraj%5CDownloads%5Cai-interview-bot-cursor&isDev=true&tsconfigPath=tsconfig.json&basePath=&assetPrefix=&nextConfigOutput=&preferredRegion=&middlewareConfig=e30%3D! (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js:99:1)
+    at __webpack_require__ (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/webpack-runtime.js:33:42)
+    at __webpack_exec__ (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js:336:39)
+    at /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js:337:104
+    at __webpack_require__.X (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/webpack-runtime.js:163:21)
+    at /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js:337:47
+    at Object.<anonymous> (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js:340:3)
+    at Module._compile (node:internal/modules/cjs/loader:1364:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1422:10)
+    at Module.load (node:internal/modules/cjs/loader:1203:32)
+    at Module._load (node:internal/modules/cjs/loader:1019:12)
+    at Module.require (node:internal/modules/cjs/loader:1231:19)
+    at mod.require (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/require-hook.js:65:28)
+    at require (node:internal/modules/helpers:177:18)
+    at requirePage (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/require.js:109:84)
+    at /mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/load-components.js:59:84
+    at async loadComponentsImpl (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/load-components.js:59:26)
+    at async DevServer.findPageComponentsImpl (/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/next-server.js:671:36) {
+  code: 'MODULE_NOT_FOUND',
+  requireStack: [
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/.next/server/app/not-found.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/require.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/load-components.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/build/utils.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/dev/hot-middleware.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/dev/hot-reloader-webpack.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/lib/router-utils/setup-dev-bundler.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/lib/router-server.js',
+    '/mnt/c/Users/waraj/Downloads/ai-interview-bot-cursor/node_modules/next/dist/server/lib/start-server.js'
+  ]
+}
+[?25h
